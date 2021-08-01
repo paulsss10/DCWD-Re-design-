@@ -1,0 +1,41 @@
+.navbar_main {
+  padding: 0.5em 1.5em;
+  background: #145da0;
+  -webkit-box-shadow: 0px 20px 23px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 20px 23px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 20px 23px -22px rgba(0, 0, 0, 0.75);
+
+  .navbar_wrapper {
+    .navbar-brand {
+        @media (min-width: 634px) {
+            display: none !important;
+            color: #fafafa !important;
+        }
+    }
+
+    .navbar-toggler {
+        color: #fafafa;
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: #fafafa !important;
+            margin-right: 0.5em;
+          }
+        }
+      }
+
+      .dropdown {
+          .dropdown-menu {
+            background: #145da0 !important;
+            .dropdown-item {
+                color: #fafafa;
+            }
+          }
+         
+      }
+    }
+  }
+}

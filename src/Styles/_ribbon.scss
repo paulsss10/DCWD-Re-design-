@@ -1,0 +1,33 @@
+@mixin main-theme {
+    color: #fafafa;
+    background-color: #0C2D48;
+}
+
+@mixin icons-theme {
+    color: #B1D4E0;
+    margin: 0 0.2em;
+    font-size: 22px;
+}
+
+.ribbon {
+    @include main-theme;
+    @media (max-width: 414.9px) {
+        display: none;
+    }
+    .navbar_wrapper {
+        padding: 0.3em 2.5em;
+
+        .d-flex {
+            .ribbon_icons {
+              @include icons-theme;
+            }
+        }
+
+        .btn {
+            background: #2E8BC0;
+            color: #fafafa;
+            padding: 0.4em 0.7em;
+            font-size: 14px;
+        }
+    }
+}
