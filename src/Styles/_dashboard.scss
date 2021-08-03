@@ -1,3 +1,12 @@
 .content_container {
     padding: 3em 2.8em;
+    z-index: 998;
+
+    @media (max-width: 768.9px) {
+
+    }
+
+    @media (max-width: 414.9px) {
+        padding: 5.5em 1.8em;
+    }
 }
